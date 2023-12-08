@@ -69,4 +69,4 @@ router.delete('/delete/:id', async (req, res) => {
     }
 })
 
-const Model = require('../models/model');
+const Model = require('../model/model');
