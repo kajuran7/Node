@@ -54,7 +54,13 @@ app.listen(3000, () => {
 
 const routes = require('./Routes/routes');
 // The module is likely a collection of route handlers or definitions
-
 app.use('/api', routes)
+// Routes for an API in an Express.js application, all the routes defined in the routes module 
+// will be accessible under the /api base path.
+
+const routes2 = require('./Routes/EmpRoutes');
+// The module is likely a collection of route handlers or definitions
+
+app.use('/api/Employee', routes2)
 // Routes for an API in an Express.js application, all the routes defined in the routes module 
 // will be accessible under the /api base path.
